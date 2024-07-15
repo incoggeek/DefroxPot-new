@@ -1,0 +1,35 @@
+{% block body %}
+{% load custom_filters %}
+    <table class="table">
+        <thead>
+            <tr>
+                {% for key in keys %}
+                <th scope="col">
+                    {% if key == 'last_analysis_results' %}
+                    {% else %}
+                        {{key}}
+                    {% endif %}
+                </th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for key_log in key_logs %}
+            <tr scope = "row">
+                {% for key in keys %}
+                {% if key == 'last_analysis_results' %}
+                {% else %}
+                
+                <td>
+                    {{ key_log|get_value:key }}
+                </td>
+                {% endif %}
+                {% endfor %}
+            </tr>
+            {% endfor %}
+            
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}

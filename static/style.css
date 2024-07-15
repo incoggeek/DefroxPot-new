@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@300&display=swap');
+
+#footer {
+    background-color: black;
+    color: #f12f46;
+    border: 12px;
+}
+
+#copyright p {
+    font-size: small;
+    color: white;
+}
+*{
+    font-family: Poppins;
+}
+
+
+.container-fluid h3{
+    font-weight: bold;
+}
+
+.body-margin {
+    margin-top: 20px;
+}
+
+.login {
+    margin: auto;
+    margin-top: 10%;
+}
+
+/* NavBar */
+
+.tab-buttons a {
+    margin: 0 30px;
+    color: #f12f46;
+    font-size: large;
+    text-decoration: none;
+    background-color: black;
+    
+}
+
+.nav-item a {
+    margin: 0 30px;
+    color: #f12f46;
+    font-size: large;
+    
+}
+
+.profile {
+    margin-bottom: 8px;
+    margin-left: 100px;
+}
+
+.nav-item a:hover {
+    color: white;
+}
+
+/* Action */
+.column-action {
+    margin-top: 80px;
+}
+
+.btn-setup {
+    background-color: #f12f46;
+    margin: 5 0px;
+    border-radius: 5px;
+    border: none;
+    padding: 5 10px;
+    color: white;
+}
+
+/* Insights */
+
+.tab-buttons a{
+    margin: 0 50px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: small;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+.tab-buttons a:active{
+    color:#f12f46;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+
+.status {
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+@media screen and (min-width: 992px) { /* Large devices */
+    .tab-buttons a {
+        display: inline-block;
+        margin-right: 1rem;
+        margin-bottom: 0;
+    }
+}

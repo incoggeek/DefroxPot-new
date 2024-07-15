@@ -1,0 +1,28 @@
+{% block body %}
+{% load custom_filters %}
+    <table class="table">
+        <thead">
+            <tr>
+                {% for key in keys %}
+                <th scope="col">
+                    {{key}}
+                </th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for key_log in key_logs %}
+            <tr scope = "row">
+                {% for key in keys %}
+                <td>
+                    {{ key_log|get_value:key }}
+                </td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+            
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}
